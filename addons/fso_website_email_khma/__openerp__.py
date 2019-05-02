@@ -22,13 +22,13 @@
 
 {
     'name': "FS-Online fso_website_email_khma",
-    'summary': """KHMA Newsletter Themes""",
+    'summary': """Khma Newsletter Themes""",
     'description': """
 
-KHMA Newsletter Theme
+Khma Newsletter Theme
 =====================
 
-Custom Newsletter-Theme for KHMA based on the website design.
+Custom Newsletter-Theme for Khma based on the website design.
 
     """,
     'author': "Datadialog - Michael Karrer",
@@ -42,6 +42,7 @@ Custom Newsletter-Theme for KHMA based on the website design.
         'fso_website_email',
     ],
     'data': [
+        'email_theme_khma_snippets.xml',
         'email_theme_khma.xml',
     ],
     'qweb': [

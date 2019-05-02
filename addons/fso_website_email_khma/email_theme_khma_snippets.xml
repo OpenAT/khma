@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    
+    
+    
+    <!-- INHERIT AND EXTEND theme_default_snippets -->
+    <template id="email_theme_khma_snippets_overrides" inherit_id="fso_website_email.theme_framework_snippets" name="Email Theme Khma Snippet overrides">
+        
+        <!-- ==================== -->
+        <!--  KHMA EXTRA SNIPPETS -->
+        <!-- ==================== -->
+        <xpath expr="//div[@id='snippet_email_special']" position="inside">
+            
+            <!-- KHMA SUBHEADING -->
+            <!-- =============== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email/static/src/icons/drop_in_button.png"/>
+                    <span class="oe_snippet_thumbnail_title">Subheading</span>
+                </div>
+                <!-- SNIPPET BLOCK -->
+                <div class="oe_snippet_body ckediting_disabled drop_in_subheading"
+                     contenteditable="false">
+                    
+                    <t t-call="fso_website_email.snippet_block">
+                        <t t-set="nockedit" t-value="True"/>
+                        
+                        <!-- TOP -->
+                        <table class="snippet_block_subheading_top" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="snippet_block_subheading_border">&amp;nbsp;</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- CONTENT -->
+                        <table class="snippet_block_subheading_content" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="ckediting_enabled" contenteditable="true">
+                                        <h6 style="text-align: center;">Subheading for Textblocks</h6>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- BOTTOM -->
+                        <table class="snippet_block_subheading_bottom" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="snippet_block_subheading_border">&amp;nbsp;</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </t>
+                    
+                </div>
+            </div>
+            
+            <!-- TIPP-LINK -->
+            <!-- ========= -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email/static/src/icons/drop_in_button.png"/>
+                    <span class="oe_snippet_thumbnail_title">Tipp-Link</span>
+                </div>
+                <!-- SNIPPET BLOCK -->
+                <p class="oe_snippet_body ckediting_disabled khma_tipplink"
+                      contenteditable="false">
+                    <a class="ckediting_enabled" contenteditable="true" href="#">Das ist ein Tipp-Link!</a>
+                </p>
+            </div>
+            
+            
+        </xpath>
+        
+        
+        <!-- =========================== -->
+        <!-- SNIPPET TARGETS AND OPTIONS -->
+        <!-- =========================== -->
+        
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+            
+            <!-- khma_tipplink -->
+            <!-- ============= -->
+            <div data-snippet-option-id="khma_tipplink"
+                 data-selector=".khma_tipplink"
+                 data-selector-siblings=".snippet_block .ckediting_enabled p, .snippet_block .ckediting_enabled .khma_tipplink">
+            </div>
+            
+        </xpath>
+        
+        
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_color']" position="before">
+            
+            <!-- KHMA Border Styles for ".snippet_block_text" snippets -->
+            <!-- OPTION_GROUP: .khma_sb_fg_borders -->
+            <div data-snippet-option-id='khma_sb_fg_borders'
+                 data-selector=".snippet_block_text_intro,
+                                .snippet_block_text_image_left,
+                                .snippet_block_text_image_right">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">KHM Borders</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>None</a></li>
+                        <li data-value='khma_sb_fg_border_left'><a>Rand links</a></li>
+                        <li data-value='khma_sb_fg_border_full'><a>Box</a></li>
+                        <li data-value='khma_sb_fg_border_info'><a>Info Box</a></li>
+                    </ul>
+                </li>
+            </div>
+            
+            <!-- KHMA Subheading (Border) Options -->
+            <!-- OPTION_GROUP: .khma_drop_in_subheading_options -->
+            <div data-snippet-option-id='khma_drop_in_subheading_options'
+                 data-selector=".drop_in_subheading">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Styles</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>Normal</a></li>
+                        <li data-value='khma_drop_in_subheading_bottom'><a>Border Bottom</a></li>
+                        <li data-value='khma_drop_in_subheading_noborder'><a>No Border</a></li>
+                    </ul>
+                </li>
+            </div>
+            
+        </xpath>
+        
+        
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="after">
+            
+            <!-- Image Sizes for Banner Snippets -->
+            <!-- OPTION_GROUP: .khma_sb_banner_width -->
+            <div data-snippet-option-id='khma_sb_banner_width'
+                 data-selector=".snippet_block_banner">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Banner Image Width</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>Full Width</a></li>
+                        <li data-value='khma_sb_banner_width_normal'><a>Normal</a></li>
+                    </ul>
+                </li>
+            </div>
+            
+        </xpath>
+        
+        
+        <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
+            
+            <!-- Additional Image Sizes for text block snippets -->
+            <!-- OPTION_GROUP: for ".snippet_block_text_*" snippets -->
+            <div data-snippet-option-id='khma_image_size'
+                 data-selector=".snippet_block_text_image_left,
+                                .snippet_block_text_image_right">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Image Size</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>Default</a></li>
+                        <li data-value='khma_small_image'><a>Small</a></li>
+                    </ul>
+                </li>
+            </div>
+            
+        </xpath>
+        
+    </template>
+    
+    
+    
+    <!-- THEME 'khma' SNIPPETS -->
+    <!-- These snippets will be loaded in the template 'email_theme_khma_assets_editmode' by java script (see below) -->
+    <template id="email_theme_khma_snippets">
+        <!-- Simply Load theme_default_snippets :) -->
+        <t t-call="fso_website_email.theme_framework_snippets"/>
+    </template>
+    
+
+</data>
+</openerp>

@@ -1,0 +1,81 @@
+/*
+    ==============
+    drop_in_button
+    ==============
+*/
+#emailBody span.drop_in_button a {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #dcdcdc;
+    color: #5a5a5a;
+}
+
+
+/* BUTTON SIZE */
+#emailBody span.drop_in_button.dadi_di_button_medium,
+#emailBody span.drop_in_button.dadi_di_button_medium a {
+    font-size: 18px;
+    border-radius: 0;
+}
+
+#emailBody span.drop_in_button.dadi_di_button_large,
+#emailBody span.drop_in_button.dadi_di_button_large a {
+    font-size: 20px;
+    border-radius: 0;
+}
+#emailBody span.drop_in_button.dadi_di_button_large a {
+    padding: 0.75em 3.5em;
+}
+
+#emailBody span.drop_in_button.dadi_di_button_huge,
+#emailBody span.drop_in_button.dadi_di_button_huge a {
+    font-size: 20px;
+    border-radius: 0;
+}
+#emailBody span.drop_in_button.dadi_di_button_huge a {
+    padding: 0.8em 4.5em;
+}
+
+
+/* BUTTON COLOR */
+#emailBody span.drop_in_button.dadi_di_button_transparent a {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+#emailBody span.drop_in_button.dadi_di_button_black a {
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+#emailBody span.drop_in_button.dadi_di_button_green a {
+    background-color: #5e8322;
+    border-color: #5e8322;
+    color: white;
+}
+#emailBody span.drop_in_button.dadi_di_button_yellow a {
+    background-color: #ffff52;
+    border-color: #ffff52;
+    color: black;
+}
+#emailBody span.drop_in_button.dadi_di_button_red a {
+    background-color: #833522;
+    border-color: #833522;
+    color: white;
+}
+#emailBody span.drop_in_button.dadi_di_button_blue a {
+    background-color: #cae0f7;
+    border-color: #cae0f7;
+    color: black;
+}
+#emailBody span.drop_in_button.dadi_di_button_orange a {
+    background-color: #ff9841;
+    border-color: #ff9841;
+    color: black;
+}
+#emailBody span.drop_in_button.dadi_di_button_pink a {
+    background-color: #835168;
+    border-color: #835168;
+    color: black;
+}
+

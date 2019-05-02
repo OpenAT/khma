@@ -2,159 +2,16 @@
 <openerp>
 <data>
     
-    <!-- INHERIT AND EXTEND theme_default_snippets -->
-    <template id="email_theme_khma_snippets_overrides" inherit_id="fso_website_email.theme_default_snippets" name="Email Theme KHMA Snippet overrides">
-        
-        <!--  New Snippets -->
-        <xpath expr="//div[@id='snippet_email_special']" position="inside">
-            
-            <!-- Subheading -->
-            <div>
-                <!-- Icon and name -->
-                <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img"
-                         src="/fso_website_email/static/src/icons/drop_in_button.png"/>
-                    <span class="oe_snippet_thumbnail_title">Subheading</span>
-                </div>
-                <!-- SNIPPET BLOCK -->
-                <div class="oe_snippet_body ckediting_disabled drop_in_subheading"
-                     contenteditable="false">
-                    
-                    <t t-call="fso_website_email.snippet_block">
-                        <t t-set="nockedit" t-value="True"/>
-                        
-                        <!-- CONTENT TABLE TOP -->
-                        <table class="snippet_block_subheading_top" border="0" cellpadding="0" cellspacing="0">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="snippet_block_subheading_border">&amp;nbsp;</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                        <!-- CONTENT TABLE BOTTOM -->
-                        <table class="snippet_block_subheading_content" border="0" cellpadding="0" cellspacing="0">
-                            <tbody>
-                                <tr>
-                                    <td class="ckediting_enabled" contenteditable="true">
-                                        <h6 style="text-align: center;">Subheading for Textblocks</h6>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <!-- CONTENT TABLE BOTTOM -->
-                        <table class="snippet_block_subheading_bottom" border="0" cellpadding="0" cellspacing="0">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="snippet_block_subheading_border">&amp;nbsp;</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                    </t>
-                    
-                </div>
-            </div>
-            
-            <!-- Tipp-Link -->
-            <div>
-                <!-- Icon and name -->
-                <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img"
-                         src="/fso_website_email/static/src/icons/drop_in_button.png"/>
-                    <span class="oe_snippet_thumbnail_title">Tipp-Link</span>
-                </div>
-                <!-- SNIPPET BLOCK -->
-                <span class="oe_snippet_body ckediting_enabled drop_in drop_in_tipplink"
-                      contenteditable="true">
-                    <a href="#">Das ist ein Tipp-Link!</a>
-                </span>
-            </div>
-            
-        </xpath>
-        
-        <xpath expr="//div[@data-snippet-option-id='drop_in']" position="after">
-            <div data-snippet-option-id="drop_in_subheading"
-                 data-selector=".drop_in_subheading"
-                 data-selector-siblings=".snippet_block .ckediting_enabled h1,
-                                         .snippet_block .ckediting_enabled h2,
-                                         .snippet_block .ckediting_enabled h3,
-                                         .snippet_block .ckediting_enabled h4,
-                                         .snippet_block .ckediting_enabled h5,
-                                         .snippet_block .ckediting_enabled h6">
-            </div>
-        </xpath>
-        
-        <!-- Additional Button Options -->
-<!--        <xpath expr="//div[@data-snippet-option-id='drop_in_button_style']//ul/li[1]" position="after">-->
-<!--            <li data-value='khma_di_button_orange'><a>Orange</a></li>-->
-<!--            <li data-value='khma_di_button_blue'><a>Blue</a></li>-->
-<!--            <li data-value='khma_di_button_pink'><a>Pink</a></li>-->
-<!--        </xpath>-->
-        
-        <!-- Additional Foreground styles -->
-        <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_color']//ul/li[1]" position="after">
-            <li data-value='khma_sb_fg_border_left'><a>Rand Links</a></li>
-            <li data-value='khma_sb_fg_border_full'><a>Box</a></li>
-            <li data-value='khma_sb_fg_border_info'><a>Info box</a></li>
-        </xpath>
-        
-        <!-- Additional Background styles -->
-<!--        <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']//ul/li[1]" position="after">-->
-<!--            <li data-value='khma_sb_bg_blue'><a>Blue</a></li>-->
-<!--            <li data-value='khma_sb_bg_pink'><a>Pink</a></li>-->
-<!--        </xpath>-->
-        
-        <!-- Banner Snippet (.snippet_block_banner) -->
-        <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="after">
-            
-            <!-- OPTION_GROUP: khma_sb_banner_width -->
-            <div data-snippet-option-id='khma_sb_banner_width'
-                 data-selector=".snippet_block_banner">
-                <!-- Snippet options menu -->
-                <li class="dropdown-submenu" data-required="true">
-                    <a tabindex="-1" href="#">Banner Image Width</a>
-                    <ul class="dropdown-menu">
-                        <li data-value=''><a>Full Width</a></li>
-                        <li data-value='khma_sb_banner_width_normal'><a>Normal</a></li>
-                    </ul>
-                </li>
-            </div>
-            
-            <!-- OPTION_GROUP: khma_sb_font_styles -->
-<!--            <div data-snippet-option-id='khma_sb_font_styles'-->
-<!--                 data-selector=".snippet_block">-->
-<!--                &lt;!&ndash; Snippet options menu &ndash;&gt;-->
-<!--                <li class="dropdown-submenu" data-required="true">-->
-<!--                    <a tabindex="-1" href="#">Special Styles</a>-->
-<!--                    <ul class="dropdown-menu">-->
-<!--                        <li data-value=''><a>None</a></li>-->
-<!--                        <li data-value='khma_p_white_bg'><a>Black Text on white Background</a></li>-->
-<!--                    </ul>-->
-<!--                </li>-->
-<!--            </div>-->
-            
-        </xpath>
-        
-    </template>
-    
-    <!-- THEME 'khma' SNIPPETS -->
-    <!-- These snippets will be loaded in the template 'email_theme_khma_assets_editmode' by java script (see below) -->
-    <template id="email_theme_khma_snippets">
-        <!-- Simply Load theme_default_snippets first :) -->
-        <t t-call="fso_website_email.theme_default_snippets"/>
-    </template>
-    
     
     <!-- THEME 'khma' ASSETS -->
     <!-- ATTENTION: At least one local css <link> or inline <style> tag  (even if just empty) MUST exist in an assets template -->
     <template id="email_theme_khma_assets">
         <link href='/fso_website_email_khma/static/src/css/email_theme_khma.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+        <link href='/fso_website_email_khma/static/src/css/email_theme_khma_snippets.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+        <link href='/fso_website_email_khma/static/src/css/email_theme_khma_snippets_buttons.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+        
+        <link href='/fso_website_email_khma/static/src/css/email_theme_khma_responsive.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+        <link href='/fso_website_email_khma/static/src/css/email_theme_khma_snippets_buttons_responsive.css' rel='stylesheet' type='text/css' t-ignore="true"/>
     </template>
     
     <!-- THEME 'khma' ASSETS EDITMODE -->
@@ -182,12 +39,10 @@
             //<![CDATA[
             (function () {
                 'use strict';
-                
                 // Overwrite class method of website/static/src/js/website.editor.js@839
                 // to append/set/override CKEDITOR.config for wrapwrap editor
                 openerp.website.RTE = openerp.website.RTE.extend({
                     _config: function () {
-                        
                         // Run the original method to modify it's result
                         var config =  this._super();
                         
@@ -213,7 +68,7 @@
                             ]
                         }, {
                             name: 'styles', items: [
-                                "Styles"
+                                "Styles",
                             ]
                         }
                         ];
@@ -222,6 +77,22 @@
                         config.colorButton_colors = 'ffffff,555555,000000,cccccc,b32986,f49800,407cca,57c940,c9c940,c94740';
                         // config.colorButton_colorsPerRow = 4;
                         // config.colorButton_enableAutomatic = true;
+                        
+                        
+                        // styles dropdown in toolbar
+                        config.stylesSet = [
+                            {name: 'Normal', element: 'p'},
+                            {name: 'H1 42', element: 'h1'},
+                            {name: 'H1 40, italic', element: 'h1', attributes: { 'class': 'khma_h1_40_italic' } },
+                            {name: 'H2 26', element: 'h2'},
+                            {name: 'H3 22', element: 'h3'},
+                            {name: 'H4 20', element: 'h4'},
+                            {name: 'H5 18', element: 'h5'},
+                            {name: 'H6 16', element: 'h6'},
+                            {name: 'Formatted', element: 'pre'},
+                            {name: 'Address', element: 'address'},
+                            {name: 'Date in H1-6', element: 'span', attributes: { 'class': 'khma_date_in_header' } },
+                        ];
                         
                         // return the config
                         return config;
@@ -239,144 +110,10 @@
             }
         </style>
     </template>
-
-    
-    <!-- KHMA HEADER CONTENT -->
-    <template id="email_theme_khma_header" name="KHMA Header">
-        <!--<div class="ckediting_disabled snippet_block snippet_block_text_image_left">-->
-        <div class="dadi_sb_bg_full ckediting_disabled">
-            <table cellpadding="0" cellspacing="0" class="centeringTable">
-                <tbody>
-                    <tr>
-                        <td align="center" valign="top">
-                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
-                                <tbody>
-                                    <tr>
-                                        <td align="center" class="flexibleContainerCell" valign="top">
-                                            <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center" class="nestedContainerCell" valign="top">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
-                                                                <tbody class="ckediting_disabled">
-                                                                    <tr class="ckediting_disabled">
-                                                                        <td class="textContent ckediting_disabled">
-                                                                            
-                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft ckediting_disabled">
-                                                                                <tbody class="ckediting_disabled">
-                                                                                    <tr class="ckediting_disabled">
-                                                                                        <td align="left" class="imageContent ckediting_disabled" valign="top">
-                                                                                            
-                                                                                            <img class="khma_title_image flexibleImage" src="/fso_website_email_khma/static/src/images/logo190.png"/>
-                                                                                            
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="khma_title">Weil mir Tiere wichtig sind</div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                            
-                                                                            <table align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight ckediting_disabled">
-                                                                                <tbody class="ckediting_disabled">
-                                                                                    <tr class="ckediting_disabled">
-                                                                                        <td class="textContent ckediting_disabled" valign="top">
-                                                                                            
-                                                                                            <p style="text-align: right; display: none;">
-                                                                                                <b>Verein PFOTENHILFE</b><br/>
-                                                                                                A-1150 Wien, Diefenbachgasse 35<br/>
-                                                                                                Tel.: +43 (0)1 892 23 77<br/>
-                                                                                                <a href="mailto:info@khmaenhilfe.org">info@khmaenhilfe.org</a> . <a href="http://www.khmaenhilfe.org" target="_blank">www.khmaenhilfe.org</a>
-                                                                                            </p>
-                                                                                            
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                            
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </template>
-    
     
     <!-- KHMA Footer CONTENT -->
     <template id="email_theme_khma_footer" name="KHMA Footer">
         
-        <!-- Abmeldelink und Social Media -->
-        <div class="khma_footer_social ckediting_disabled">
-            <table class="centeringTable" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td align="center" valign="top">
-                        <table class="flexibleContainer" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td class="flexibleContainerCell" align="center" valign="top">
-                                    <table class="nestedContainer" border="0" cellpadding="0" cellspacing="0">
-                                        <tbody>
-                                            <tr>
-                                                <td class="nestedContainerCell" align="center" valign="top">
-                                                    <table class="contentTable" border="0" cellpadding="0" cellspacing="0">
-                                                        <tr>
-                                                            <td class="textContent ckediting_disabled" align="center" valign="top" contenteditable="false">
-                                                                
-                                                                <!-- content left -->
-                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td align="center" class="textContent ckediting_enabled" valign="top">
-                                                                                <p style="text-align: left;">
-                                                                                    Wir belästigen Sie? Das wollen wir nicht.<br/>
-                                                                                    <a href="/unsubscribe">Hier können Sie sich abmelden</a>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                                
-                                                                <!-- content right -->
-                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td align="center" class="textContent ckediting_enabled" valign="top">
-                                                                                <p style="text-align: right;">
-                                                                                    <a href="http://www.facebook.com/Pfotenhilfe.Lochen" target="_blank"><img src="/fso_website_email_khma/static/src/images/Facebook-hell.png" alt="Facebook" title="Facebook"/></a>
-                                                                                    <a href="http://www.youtube.com/user/PFOTENHILFELochen" target="_blank"><img src="/fso_website_email_khma/static/src/images/YouTube-hell.png" alt="Youtube" title="Youtube"/></a>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-        
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        
-        <!-- Info und Addresse -->
         <div class="khma_footer_info dadi_sb_bg_full ckediting_disabled">
             <table class="centeringTable" cellpadding="0" cellspacing="0">
                 <tr>
@@ -393,19 +130,16 @@
                                                             <td class="textContent ckediting_disabled" align="center" valign="top" contenteditable="false">
                                                                 
                                                                 <!-- content left -->
-                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
+                                                                <table id="footer_left" align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                <h6>KUNSTHISTORISCHES MUSEUM WIEN</h6>
                                                                                 <p style="text-align: left;">
-                                                                                    Copyright © Tierschutzhof PFOTENHILFE. Diese E-Mail wurde an
-                                                                                    <span class="ckediting_disabled drop_in drop_in_print_field pf_email">
-                                                                                        <span class="pf_email" data-fs-email-placeholder="%Email%" title="%Email%">
-                                                                                            maximilian.mustermann@meinedomain.com
-                                                                                        </span>
-                                                                                    </span>
-                                                                                    gesandt. Sie erhalten dieses E-Mail, weil Sie den Tierschutzhof PFOTENHILFE mit Spenden unterstützen oder
-                                                                                    weil Sie sich für unseren Newsletter angemeldet haben.
+                                                                                    Maria Theresien-Platz, 1010 Wien<br/>
+                                                                                    T +43 1 525 24-0<br/>
+                                                                                    <a href="mailto:info@khm.at" target="_blank">info@khm.at</a><br/>
+                                                                                    <a href="http://www.khm.at/" target="_blank">www.khm.at</a>
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -413,23 +147,24 @@
                                                                 </table>
                                                                 
                                                                 <!-- content right -->
-                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
+                                                                <table id="footer_right" align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td align="center" class="textContent ckediting_enabled" valign="top">
-                                                                                <p style="text-align: right;">
-                                                                                    <strong>Unsere Anschrift lautet:</strong><br/>
-                                                                                    Tierschutzhof PFOTENHILFE<br/>
-                                                                                    Gutferding 11, 5221 Lochen am See<br/>
-                                                                                    Tel.: +43|1|892 23 77<br/>
-                                                                                    E-Mail: <a href="mailto:info@khmaenhilfe.org" target="_blank">info@khmaenhilfe.org</a><br/>
-                                                                                    Website: <a href="http://www.khmaenhilfe.org/" target="_blank">www.khmaenhilfe.org</a>
+                                                                                <p id="footer_actions" style="text-align: right;">
+                                                                                    <a href="mailto:info@khmaenhilfe.org" target="_blank">Meine Daten ändern</a><br/>
+                                                                                    <a href="http://www.khmaenhilfe.org/" target="_blank">Newsletter abbestellen</a>
+                                                                                </p>
+                                                                                <p id="footer_social_media" style="text-align: right;">
+                                                                                    <a href="http://www.test.com" target="_blank"><img src="/fso_website_email_khma/static/src/images/YouTube-hell.png" alt="Youtube" title="Instagram"/></a>
+                                                                                    <a href="http://www.test.com" target="_blank"><img src="/fso_website_email_khma/static/src/images/YouTube-hell.png" alt="Youtube" title="Youtube"/></a>
+                                                                                    <a href="http://www.test.com" target="_blank"><img src="/fso_website_email_khma/static/src/images/Facebook-hell.png" alt="Facebook" title="Facebook"/></a>
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-        
+                                                                
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -462,7 +197,8 @@
 
             <!-- TEMPLATE SETTINGS -->
             <!-- ================= -->
-            <t t-set="load_default_theme" t-value="True"/>
+            <t t-set="load_theme_framework" t-value="True"/>
+            <t t-set="skipp_theme_framework_responsive_css" t-value="False"/>
             <!-- ================= -->
 
             <head>
@@ -491,27 +227,18 @@
                     <center>
                         <table id="bodyTable" class="ckediting_disabled" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
 
-                            <!-- HEADER -->
+                            <!-- OPEN IN BROWSER -->
                             <tr>
                                 <td id='open_in_browser' class="headerCell ckediting_disabled" align="center">
                                     <![CDATA[
                                     <a id="view-email-in-browser"
                                        href="%open_browser%" target="_blank">
-                                         Diese Nachricht im Browser lesen
+                                         Diese Nachricht im Browser lesen &rarr;
                                     </a>
                                     ]]>
                                 </td>
                             </tr>
                             
-                            <!-- KHMA HEADER -->
-<!--                            <tr>-->
-<!--                                <td id='khma_header' class="headerCell ckediting_disabled" align="center">-->
-<!--    -->
-<!--                                    <t t-call="fso_website_email_khma.email_theme_khma_header"/>-->
-<!--                                    -->
-<!--                                </td>-->
-<!--                            </tr>-->
-
                             <!-- MAIN -->
                             <tr>
                                 <!-- bodyCell width: 100% padding: 0 left and right  -->
@@ -528,17 +255,26 @@
                                             </td>
                                         </tr>
                                     </table>
+                                    
                                 </td>
                             </tr>
 
                             <!-- FOOTER -->
-<!--                            <tr>-->
-<!--                                <td id='khma_footer' align="center" class="footerCell ckediting_disabled">-->
-<!--                                    -->
-<!--                                    <t t-call="fso_website_email_khma.email_theme_khma_footer"/>-->
-<!--                                    -->
-<!--                                </td>-->
-<!--                            </tr>-->
+                            <tr>
+                                <td id='khma_footer' align="center" class="footerCell ckediting_disabled">
+                                    
+                                    <table id="khma_footer_body" class="ckediting_disabled" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td class="ckediting_disabled" align="center" valign="top">
+
+                                                <t t-call="fso_website_email_khma.email_theme_khma_footer"/>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
 
                         </table>
                     </center>
