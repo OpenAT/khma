@@ -12,6 +12,20 @@
         <!-- ==================== -->
         <xpath expr="//div[@id='snippet_email_special']" position="inside">
             
+            <!-- KHMA BIN -->
+            <!-- ======== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_bin.png"/>
+                    <span class="oe_snippet_thumbnail_title">BIN</span>
+                </div>
+                <!-- SNIPPET BLOCK -->
+                <div class="oe_snippet_body ckediting_enabled khma_bin" contenteditable="true">
+                </div>
+            </div>
+            
             <!-- KHMA SUBHEADING -->
             <!-- =============== -->
             <div>
@@ -72,14 +86,439 @@
                 <!-- Icon and name -->
                 <div class="oe_snippet_thumbnail">
                     <img class="oe_snippet_thumbnail_img"
-                         src="/fso_website_email/static/src/icons/drop_in_button.png"/>
+                         src="/fso_website_email_khma/static/src/icons/khma_tipp_link.png"/>
                     <span class="oe_snippet_thumbnail_title">Tipp-Link</span>
                 </div>
                 <!-- SNIPPET BLOCK -->
-                <p class="oe_snippet_body ckediting_disabled khma_tipplink"
-                      contenteditable="false">
-                    <a class="ckediting_enabled" contenteditable="true" href="#">Das ist ein Tipp-Link!</a>
-                </p>
+                <span class="oe_snippet_body ckediting_enabled khma_tipplink" contenteditable="true">
+                    <a href="#">Das ist ein Tipp-Link! v5</a>
+                </span>
+            </div>
+            
+            <span class="snippet_menu_vertical_divider"/>
+    
+            <!-- TIPP-LINK BLOCK -->
+            <!-- =============== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_tipp_link_block.png"/>
+                    <span class="oe_snippet_thumbnail_title">Tipp-Links Block</span>
+                </div>
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_intro dadi_sb_bg_lightgrey dadi_sb_fg_normal">
+                    <table cellpadding="0" cellspacing="0" class="centeringTable">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="flexibleContainerCell" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" class="nestedContainerCell" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="textContent ckediting_enabled">
+                                                                                    <h1>
+                                                                                        <em>Unsere Tipps</em>
+                                                                                        <span class="khma_date_in_header">IM FEBRUAR</span>
+                                                                                    </h1>
+                                                                        
+                                                                                    <p>
+                                                                                        <span class="ckediting_enabled khma_tipplink">
+                                                                                            <a href="#">Das ist ein Tipp-Link!</a>
+                                                                                        </span>
+                                                                                        <span class="ckediting_enabled khma_tipplink">
+                                                                                            <a href="#">Das ist ein Tipp-Link!</a>
+                                                                                        </span>
+                                                                                        <span class="ckediting_enabled khma_tipplink">
+                                                                                            <a href="#">Das ist ein Tipp-Link!</a>
+                                                                                        </span>
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+            <!-- INTRO BLOCK -->
+            <!-- =============== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_intro_block.png"/>
+                    <span class="oe_snippet_thumbnail_title">INTRO Block</span>
+                </div>
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_intro khma_sb_fg_border_left dadi_sb_fg_normal">
+                    <table cellpadding="0" cellspacing="0" class="centeringTable">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="flexibleContainerCell" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" class="nestedContainerCell" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="textContent ckediting_enabled">
+                                                                                    <h2>
+                                                                                        <em>Sehr geehrte Damen und Herren,</em>
+                                                                                    </h2>
+                                                                        
+                                                                                    <p>Vestibulum vitae metus sed purus elementum malesuada. Aliquam feugiat metus ut orci. Etiam
+                                                                                        scelerisque lacus eu tellus. Praesent neque est, placerat in, rhoncus nec, tempor eleifend,
+                                                                                        sem. ...
+                                                                                    </p>
+                                                                        
+                                                                                    <p>Das ist eine super Sache</p>
+                                                                        
+                                                                                    <p>&amp;nbsp;</p>
+                                                                        
+                                                                                    <p>Wir wünschen Innen einen kunstvollen Februar!
+                                                                                        <br/>
+                                                                                        <em>Ihre Newsletter-Redaktion</em>
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+            <!-- STARTER BLOCK -->
+            <!-- =============== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_starter_block.png"/>
+                    <span class="oe_snippet_thumbnail_title">STARTER Block</span>
+                </div>
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_intro dadi_sb_fg_normal">
+                    <table cellpadding="0" cellspacing="0" class="centeringTable">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="flexibleContainerCell" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" class="nestedContainerCell" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="textContent ckediting_enabled">
+                                                                                    <h1 style="text-align: center;">Zum Valentinstag zu
+                                                                                        <br/>
+                                                                                        zweit ins Museum
+                                                                                    </h1>
+                                                                        
+                                                                                    <div class="ckediting_disabled drop_in_subheading">
+                                                                                        <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="center" valign="top">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td align="center" class="flexibleContainerCell" valign="top">
+                                                                                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                                                                                               class="nestedContainer">
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center" class="nestedContainerCell"
+                                                                                                                                        valign="top">
+                                                                                                                                        <table border="0" cellpadding="0"
+                                                                                                                                               cellspacing="0" class="contentTable">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td class="textContent">
+                                                                                                                                                        <table border="0"
+                                                                                                                                                               cellpadding="0"
+                                                                                                                                                               cellspacing="0"
+                                                                                                                                                               class="snippet_block_subheading_top">
+                                                                                                                                                            <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td>
+                                                                                                                                                                        <div class="snippet_block_subheading_border">
+                                                                                                                                                                            &amp;nbsp;
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                            
+                                                                                                                                                        <table border="0"
+                                                                                                                                                               cellpadding="0"
+                                                                                                                                                               cellspacing="0"
+                                                                                                                                                               class="snippet_block_subheading_content">
+                                                                                                                                                            <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td class="ckediting_enabled">
+                                                                                                                                                                        <h6 style="text-align: center;">
+                                                                                                                                                                            Jahreskarten-Aktion
+                                                                                                                                                                            von 13.
+                                                                                                                                                                            bis
+                                                                                                                                                                            20.2.
+                                                                                                                                                                        </h6>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                            
+                                                                                                                                                        <table border="0"
+                                                                                                                                                               cellpadding="0"
+                                                                                                                                                               cellspacing="0"
+                                                                                                                                                               class="snippet_block_subheading_bottom">
+                                                                                                                                                            <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td>
+                                                                                                                                                                        <div class="snippet_block_subheading_border">
+                                                                                                                                                                            &amp;nbsp;
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                        
+                                                                                    <p>Vestibulum vitae metus sed purus elementum malesuada. Aliquam feugiat metus ut orci. Etiam
+                                                                                        scelerisque lacus eu tellus. Praesent neque est, placerat in, rhoncus nec, tempor eleifend,
+                                                                                        sem.
+                                                                                        Vestibulum vitae metus sed purus elementum malesuada. Aliquam feugiat metus ut orci. Etiam
+                                                                                        scelerisque lacus eu tellus. Praesent neque est, placerat in, rhoncus nec, tempor eleifend,
+                                                                                        semVestibulum vitae metus sed purus elementum malesuada. Aliquam feugiat&amp;nbsp;tempor
+                                                                                        eleifend,
+                                                                                        sem...
+                                                                                    </p>
+                                                                        
+                                                                                    <p>&amp;nbsp;</p>
+                                                                        
+                                                                                    <p>Die Aktion gilt im oben genannten Zeitraum und ist nur dirket and den Museumskassen
+                                                                                        erhältlich.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- INFO BLOCK -->
+            <!-- ========== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_info_block.png"/>
+                    <span class="oe_snippet_thumbnail_title">INFO Block</span>
+                </div>
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_twocol khma_sb_fg_border_full dadi_sb_fg_normal">
+                    <table cellpadding="0" cellspacing="0" class="centeringTable">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="flexibleContainerCell" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" class="nestedContainerCell" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="textContent">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                    <p class="khma_small_text">
+                                                                                                        <span tabindex="-1">
+                                                                                                            <span class="fa fa-calendar" data-widget="icons"></span>
+                                                                                                        </span>&amp;nbsp;6. NOVEMBER 2018 BIS 28. APRIL 2019
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                        
+                                                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                    <p class="khma_small_text">
+                                                                                                        <span tabindex="-1">
+                                                                                                            <span class="fa fa-map-marker" data-widget="icons"></span>
+                                                                                                        </span>&amp;nbsp;KUNSTKAMMER, SAAL XIX
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- BUTTON BLOCK -->
+            <!-- ========== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/khma_button_block.png"/>
+                    <span class="oe_snippet_thumbnail_title">BUTTON Block</span>
+                </div>
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_twocol dadi_sb_fg_normal">
+                    <table cellpadding="0" cellspacing="0" class="centeringTable">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="flexibleContainerCell" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" class="nestedContainerCell" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="textContent">
+                                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                    <h3>
+                                                                                                        <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_normal dadi_di_button_width_full dadi_di_button_default">
+                                                                                                            <a href="#">Weitere Informationen</a>
+                                                                                                        </span>
+                                                                                                    </h3>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                        
+                                                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                    <h3>
+                                                                                                        <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_black dadi_di_button_normal dadi_di_button_width_full">
+                                                                                                            <a href="#">
+                                                                                                                <span tabindex="-1">
+                                                                                                                    <span class="fa fa-heart" data-widget="icons"></span>
+                                                                                                                </span>
+                                                                                                                &amp;nbsp;Jetzt bestellen
+                                                                                                            </a>
+                                                                                                        </span>
+                                                                                                    </h3>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             
             
@@ -92,11 +531,40 @@
         
         <xpath expr="//div[@id='snippet_options']" position="inside">
             
+            <!-- khma_bin -->
+            <!-- ======== -->
+            <div data-snippet-option-id='khma_bin_target'
+                 data-selector=".khma_bin"
+                 data-selector-siblings="[data-oe-field='body_html'] > div"
+                 data-selector-children="[data-oe-field='body_html']">
+            </div>
+            <div data-snippet-option-id='khma_bin_inside'
+                 data-selector=".snippet_block"
+                 data-selector-siblings=".khma_bin > div"
+                 data-selector-children=".khma_bin">
+            </div>
+            
             <!-- khma_tipplink -->
             <!-- ============= -->
             <div data-snippet-option-id="khma_tipplink"
                  data-selector=".khma_tipplink"
-                 data-selector-siblings=".snippet_block .ckediting_enabled p, .snippet_block .ckediting_enabled .khma_tipplink">
+                 data-selector-siblings=".snippet_block .ckediting_enabled .khma_tipplink"
+                 data-selector-children=".snippet_block .ckediting_enabled p">
+            </div>
+            
+            <!-- snippet_block_text_image_left  !!! INSIDE !!!  snippet_block_text_twocol -->
+            <!-- ======================================================================== -->
+            <div data-snippet-option-id='image_left_inside_twocol'
+                 data-selector=".snippet_block_text_image_left"
+                 data-selector-siblings=".snippet_block_text_twocol .flexibleContainerLeft .textContent p, .snippet_block_text_twocol .flexibleContainerRight .textContent p,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h1, .snippet_block_text_twocol .flexibleContainerRight .textContent h1,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h2, .snippet_block_text_twocol .flexibleContainerRight .textContent h2,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h3, .snippet_block_text_twocol .flexibleContainerRight .textContent h3,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h4, .snippet_block_text_twocol .flexibleContainerRight .textContent h4,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h5,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .textContent h6,
+                                         .snippet_block_text_twocol .flexibleContainerLeft .snippet_block_text_image_left"
+                 data-selector-children=".snippet_block_text_twocol .flexibleContainerLeft .textContent, .snippet_block_text_twocol .flexibleContainerRight .textContent">
             </div>
             
         </xpath>
@@ -109,14 +577,16 @@
             <div data-snippet-option-id='khma_sb_fg_borders'
                  data-selector=".snippet_block_text_intro,
                                 .snippet_block_text_image_left,
-                                .snippet_block_text_image_right">
+                                .snippet_block_text_image_right,
+                                .snippet_block_text_twocol,
+                                .snippet_block_text_threecol">
                 <!-- Snippet options menu -->
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">KHM Borders</a>
                     <ul class="dropdown-menu">
                         <li data-value=''><a>None</a></li>
                         <li data-value='khma_sb_fg_border_left'><a>Rand links</a></li>
-                        <li data-value='khma_sb_fg_border_full'><a>Box</a></li>
+                        <li data-value='khma_sb_fg_border_full'><a>Oben und Unten</a></li>
                         <li data-value='khma_sb_fg_border_info'><a>Info Box</a></li>
                     </ul>
                 </li>
@@ -125,7 +595,11 @@
             <!-- KHMA Subheading (Border) Options -->
             <!-- OPTION_GROUP: .khma_drop_in_subheading_options -->
             <div data-snippet-option-id='khma_drop_in_subheading_options'
-                 data-selector=".drop_in_subheading">
+                 data-selector=".drop_in_subheading"
+                 data-selector-siblings=".snippet_block .ckediting_enabled h1,
+                                         .snippet_block .ckediting_enabled h2,
+                                         .snippet_block .ckediting_enabled h3,
+                                         .snippet_block .ckediting_enabled p">
                 <!-- Snippet options menu -->
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Styles</a>
@@ -141,6 +615,19 @@
         
         
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="after">
+            
+            <!-- OPTION_GROUP: dadi_sb_fg_width_extra -->
+            <div data-snippet-option-id='dadi_sb_fg_width_extra'
+                 data-selector=".snippet_block_text_twocol">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Foreground Width</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>None</a></li>
+                        <li data-value='dadi_sb_fg_normal'><a>Normal</a></li>
+                    </ul>
+                </li>
+            </div>
             
             <!-- Image Sizes for Banner Snippets -->
             <!-- OPTION_GROUP: .khma_sb_banner_width -->
@@ -158,8 +645,27 @@
             
         </xpath>
         
+        <!-- Additional Button Styles -->
+        <xpath expr="//li[@data-value='dadi_di_button_default']" position="after">
+            <li data-value='dadi_di_button_grey'><a>Grey</a></li>
+            <li data-value='dadi_di_button_darkgrey'><a>Dark Grey</a></li>
+        </xpath>
         
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
+            
+            <!-- OPTION_GROUP: drop_in_button_width -->
+            <div data-snippet-option-id='drop_in_button_width'
+                 data-selector=".drop_in_button">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Width</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>Normal</a></li>
+                        <li data-value='dadi_di_button_width_full'><a>Full</a></li>
+                        <li data-value='dadi_di_button_width_half'><a>Half</a></li>
+                    </ul>
+                </li>
+            </div>
             
             <!-- Additional Image Sizes for text block snippets -->
             <!-- OPTION_GROUP: for ".snippet_block_text_*" snippets -->

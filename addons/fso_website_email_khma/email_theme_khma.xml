@@ -35,80 +35,10 @@
         </script>
         
         <!-- Override CKEditor Settings -->
-        <script type="text/javascript">
-            //<![CDATA[
-            (function () {
-                'use strict';
-                // Overwrite class method of website/static/src/js/website.editor.js@839
-                // to append/set/override CKEDITOR.config for wrapwrap editor
-                openerp.website.RTE = openerp.website.RTE.extend({
-                    _config: function () {
-                        // Run the original method to modify it's result
-                        var config =  this._super();
-                        
-                        // Set custom toolbar
-                        // https://docs.ckeditor.com/ckeditor4/latest/guide/dev_toolbar.html
-                        config.toolbar = [{
-                            name: 'basicstyles', items: [
-                                "Bold", "Italic", "Underline", "Strike", "Subscript",
-                                "Superscript", "TextColor", "BGColor", "RemoveFormat"
-                            ]
-                        }, {
-                            name: 'span', items: [
-                                "Link", "Blockquote", "BulletedList",
-                                "NumberedList", "Indent", "Outdent"
-                            ]
-                        }, {
-                            name: 'justify', items: [
-                                "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyBlock"
-                            ]
-                        }, {
-                            name: 'special', items: [
-                                "Image"
-                            ]
-                        }, {
-                            name: 'styles', items: [
-                                "Styles",
-                            ]
-                        }
-                        ];
-                        
-                        // Add Custom font and font background colors
-                        config.colorButton_colors = 'ffffff,555555,000000,cccccc,b32986,f49800,407cca,57c940,c9c940,c94740';
-                        // config.colorButton_colorsPerRow = 4;
-                        // config.colorButton_enableAutomatic = true;
-                        
-                        
-                        // styles dropdown in toolbar
-                        config.stylesSet = [
-                            {name: 'Normal', element: 'p'},
-                            {name: 'H1 42', element: 'h1'},
-                            {name: 'H1 40, italic', element: 'h1', attributes: { 'class': 'khma_h1_40_italic' } },
-                            {name: 'H2 26', element: 'h2'},
-                            {name: 'H3 22', element: 'h3'},
-                            {name: 'H4 20', element: 'h4'},
-                            {name: 'H5 18', element: 'h5'},
-                            {name: 'H6 16', element: 'h6'},
-                            {name: 'Formatted', element: 'pre'},
-                            {name: 'Address', element: 'address'},
-                            {name: 'Date in H1-6', element: 'span', attributes: { 'class': 'khma_date_in_header' } },
-                        ];
-                        
-                        // return the config
-                        return config;
-                    }
-                });
-            })();
-            //]]>
-        </script>
+        <script src='/fso_website_email_khma/static/src/js/email_theme_khma_ckeditor.js' type='text/javascript' t-ignore="true"/>
         
-        <style>
-            /* fix sticky header space and add bottom space in edit mode */
-            #wrapwrap {
-                margin-top: 42px;
-                margin-bottom: 600px;
-            }
-        </style>
+        <!-- CSS for edit mode only -->
+        <link href='/fso_website_email_khma/static/src/css/khma_editmode_only.css' rel='stylesheet' type='text/css' t-ignore="true"/>
     </template>
     
     <!-- KHMA Footer CONTENT -->

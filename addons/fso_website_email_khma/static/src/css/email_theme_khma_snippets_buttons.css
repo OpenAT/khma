@@ -38,6 +38,21 @@
 
 
 /* BUTTON COLOR */
+/* for pictograms */
+#emailBody span.drop_in_button a span {
+    color: black;
+}
+
+#emailBody span.drop_in_button.dadi_di_button_grey a {
+    background-color: #e8e7e4;
+    border-color: #e8e7e4;
+    color: black;
+}
+#emailBody span.drop_in_button.dadi_di_button_darkgrey a {
+    background-color: #5a5a5a;
+    border-color: #5a5a5a;
+    color: black;
+}
 #emailBody span.drop_in_button.dadi_di_button_transparent a {
     background-color: transparent;
     border-color: transparent;
@@ -46,6 +61,9 @@
 #emailBody span.drop_in_button.dadi_di_button_black a {
     background-color: #000000;
     border-color: #000000;
+    color: white;
+}
+#emailBody span.drop_in_button.dadi_di_button_black a span {
     color: white;
 }
 #emailBody span.drop_in_button.dadi_di_button_green a {
@@ -79,3 +97,10 @@
     color: black;
 }
 
+/* WIDHT */
+#emailBody span.drop_in_button.dadi_di_button_width_full a {
+    width: 100%
+}
+#emailBody span.drop_in_button.dadi_di_button_width_half a {
+    width: 50%
+}

@@ -159,11 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 .h1, h1 {
     font-size: 42px;
     padding-bottom: 12px;
-    font-weight: 700;
+    font-weight: 300;
 }
-h1.khma_h1_40_italic {
+h1.khma_h1_40 {
     font-size: 40px;
-    font-style: italic;
 }
 .h2, h2 {
     font-size: 26px;
@@ -206,5 +205,13 @@ blockquote {
 }
 
 
+.khma_small_text {
+    font-size: 12px;
+}
 
-
+.khma_date_in_header {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
