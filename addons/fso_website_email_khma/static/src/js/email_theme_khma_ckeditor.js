@@ -55,6 +55,7 @@
                 {name: 'Formatted', element: 'pre'},
                 {name: 'Address', element: 'address'},
                 {name: 'Date in H1-6', element: 'span', attributes: { 'class': 'khma_date_in_header' } },
+                {name: 'Headline 4b', element: 'span', attributes: { 'class': 'khma_headline4b' } },
             ];
 
             // return the config
@@ -62,3 +63,8 @@
         }
     });
 })();
+
+
+
+
+

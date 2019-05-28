@@ -80,6 +80,29 @@
                 </div>
             </div>
             
+            <!-- snippet_block_borderheading -->
+            <!-- =========================== -->
+            <div>
+                <!-- Icon and name -->
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img"
+                         src="/fso_website_email_khma/static/src/icons/snippet_block_borderheading.png"/>
+                    <span class="oe_snippet_thumbnail_title">Border Heading</span>
+                </div>
+                <!-- SNIPPET BLOCK -->
+                <div class="oe_snippet_body ckediting_disabled snippet_block snippet_block_borderheading"
+                     contenteditable="false">
+                    
+                    <t t-call="fso_website_email.snippet_block">
+                        <t t-set="nockedit" t-value="True"/>
+                        <div class="borderheading_center_block ckediting_enabled" contenteditable="true">
+                            <h5>Border Heading 18pt</h5>
+                        </div>
+                    </t>
+                    
+                </div>
+            </div>
+            
             <!-- TIPP-LINK -->
             <!-- ========= -->
             <div>
@@ -474,11 +497,9 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td align="center" class="textContent ckediting_enabled" valign="top">
-                                                                                                    <h3>
-                                                                                                        <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_normal dadi_di_button_width_full dadi_di_button_default">
-                                                                                                            <a href="#">Weitere Informationen</a>
-                                                                                                        </span>
-                                                                                                    </h3>
+                                                                                                    <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_normal dadi_di_button_default dadi_di_button_width_full">
+                                                                                                        <a href="#">Weitere Informationen</a>
+                                                                                                    </span>
                                                                                                 </td>
                                                                                             </tr>
                                                                                         </tbody>
@@ -488,16 +509,11 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td align="center" class="textContent ckediting_enabled" valign="top">
-                                                                                                    <h3>
-                                                                                                        <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_black dadi_di_button_normal dadi_di_button_width_full">
-                                                                                                            <a href="#">
-                                                                                                                <span tabindex="-1">
-                                                                                                                    <span class="fa fa-heart" data-widget="icons"></span>
-                                                                                                                </span>
-                                                                                                                &amp;nbsp;Jetzt bestellen
-                                                                                                            </a>
-                                                                                                        </span>
-                                                                                                    </h3>
+                                                                                                    <span class="ckediting_enabled drop_in drop_in_button dadi_di_button_fullcenter dadi_di_button_black dadi_di_button_normal dadi_di_button_width_full">
+                                                                                                        <a href="#">
+                                                                                                            Jetzt bestellen
+                                                                                                        </a>
+                                                                                                    </span>
                                                                                                 </td>
                                                                                             </tr>
                                                                                         </tbody>
@@ -530,6 +546,18 @@
         <!-- =========================== -->
         
         <xpath expr="//div[@id='snippet_options']" position="inside">
+            
+            <!-- website_snippet_anchor -->
+            <!-- ====================== -->
+            <div data-snippet-option-id="website_snippet_anchor"
+                data-selector=".snippet_block">
+                <li>
+                    <a class="js_anchor"
+                       title="Use anchors to go directly to a section of your page, appending #anchor to the URL">
+                        Set anchor
+                    </a>
+                </li>
+            </div>
             
             <!-- khma_bin -->
             <!-- ======== -->
@@ -574,6 +602,21 @@
             
             <!-- KHMA Border Styles for ".snippet_block_text" snippets -->
             <!-- OPTION_GROUP: .khma_sb_fg_borders -->
+            <div data-snippet-option-id='khma_snippet_block_padding'
+                 data-selector=".snippet_block">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Vertical Padding</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''><a>Normal</a></li>
+                        <li data-value='khma_snippet_block_padding_none'><a>Remove Padding</a></li>
+                        <li data-value='khma_snippet_block_padding_lower'><a>Lower</a></li>
+                    </ul>
+                </li>
+            </div>
+            
+            <!-- KHMA Border Styles for ".snippet_block_text" snippets -->
+            <!-- OPTION_GROUP: .khma_sb_fg_borders -->
             <div data-snippet-option-id='khma_sb_fg_borders'
                  data-selector=".snippet_block_text_intro,
                                 .snippet_block_text_image_left,
@@ -582,7 +625,7 @@
                                 .snippet_block_text_threecol">
                 <!-- Snippet options menu -->
                 <li class="dropdown-submenu" data-required="true">
-                    <a tabindex="-1" href="#">KHM Borders</a>
+                    <a tabindex="-1" href="#">Ränder</a>
                     <ul class="dropdown-menu">
                         <li data-value=''><a>None</a></li>
                         <li data-value='khma_sb_fg_border_left'><a>Rand links</a></li>
@@ -678,6 +721,7 @@
                     <ul class="dropdown-menu">
                         <li data-value=''><a>Default</a></li>
                         <li data-value='khma_small_image'><a>Small</a></li>
+                        <li data-value='khma_tiny_image'><a>Tiny</a></li>
                     </ul>
                 </li>
             </div>

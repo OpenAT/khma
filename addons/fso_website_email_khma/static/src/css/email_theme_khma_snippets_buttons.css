@@ -42,7 +42,10 @@
 #emailBody span.drop_in_button a span {
     color: black;
 }
-
+#emailBody span.drop_in_button.dadi_di_button_normal a {
+    background-color: white;
+    border-color: white;
+}
 #emailBody span.drop_in_button.dadi_di_button_grey a {
     background-color: #e8e7e4;
     border-color: #e8e7e4;
@@ -99,7 +102,9 @@
 
 /* WIDHT */
 #emailBody span.drop_in_button.dadi_di_button_width_full a {
-    width: 100%
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 #emailBody span.drop_in_button.dadi_di_button_width_half a {
     width: 50%

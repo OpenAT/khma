@@ -6,7 +6,9 @@
     width: 650px;
 }
 
+
 /* snippet_block_text_image_left */
+/* ----------------------------- */
 .snippet_block_text_image_left .flexibleContainerRight,
 .snippet_block_text_image_left .flexibleContainerRight .flexibleImage {
     width: 390px;
@@ -18,7 +20,9 @@
     width: 340px;
 }
 
+
 /* snippet_block_text_image_right */
+/* ------------------------------ */
 .snippet_block_text_image_right .flexibleContainerLeft,
 .snippet_block_text_image_right .flexibleContainerLeft .flexibleImage {
     width: 390px;
@@ -30,7 +34,9 @@
     width: 340px;
 }
 
+
 /* snippet_block_text_twocol */
+/* ------------------------- */
 .snippet_block_text_twocol .flexibleContainerRight,
 .snippet_block_text_twocol .flexibleContainerRight .flexibleImage {
     width: 295px;
@@ -39,7 +45,7 @@
 .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage {
     width: 295px;
 }
-
+/* .snippet_block_text_twocol.dadi_sb_fg_normal */
 .snippet_block_text_twocol.dadi_sb_fg_normal .flexibleContainerCell .nestedContainerCell {
     padding-left: 20px;
     padding-right: 20px;
@@ -54,8 +60,8 @@
 }
 
 
-
-/* snippet_block_text_image_left  !!! INSIDE !!!  snippet_block_text_twocol */
+/* snippet_block_text_twocol > snippet_block_text_image_left */
+/* --------------------------------------------------------- */
 #emailBody .snippet_block_text_twocol .snippet_block_text_image_left .flexibleContainer {
     width: 100%;
 }
@@ -69,16 +75,29 @@
 .snippet_block_text_twocol .snippet_block_text_image_left .flexibleContainerRight {
     width: 190px;
 }
-
+/* .snippet_block_text_twocol.dadi_sb_fg_normal > .snippet_block_text_image_left */
+.snippet_block_text_twocol.dadi_sb_fg_normal .snippet_block_text_image_left .flexibleContainerCell .nestedContainerCell {
+    padding-left: 0;
+    padding-right: 0;
+}
+.snippet_block_text_twocol.dadi_sb_fg_normal .snippet_block_text_image_left .flexibleContainerLeft,
+.snippet_block_text_twocol.dadi_sb_fg_normal .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+    width: 92px;
+}
+.snippet_block_text_twocol.dadi_sb_fg_normal .snippet_block_text_image_left .flexibleContainerRight {
+    width: 170px;
+}
 
 
 /* snippet_block_text_threecol */
+/* ------------------------- */
 .snippet_block_text_threecol .flexibleContainer33,
 .snippet_block_text_threecol .flexibleContainer33 .flexibleImage {
     width: 190px;
 }
 
 /* snippet_block_banner */
+/* -------------------- */
 .snippet_block_banner .flexibleImage,
 .snippet_block_banner.dadi_sb_bg_normal .flexibleImage {
     width: 610px;
@@ -92,6 +111,7 @@
     width: 570px;
     max-width: 570px;
 }
+
 
 
 /*
@@ -131,10 +151,42 @@
 .dadi_sb_spacer_large .snippet_block_spacer_bottom td {
     height: 24px;
 }
+
+
+
 /*
-    ======================
-    SUBHEADING and options
-    ======================
+    ===========================
+    snippet_block_borderheading
+    ===========================
+*/
+.snippet_block_borderheading {
+    padding-top: 1.85em;
+    padding-bottom: 1.5em;
+}
+.snippet_block_borderheading .borderheading_center_block {
+    text-align: center;
+    width: 100%;
+}
+.snippet_block_borderheading .borderheading_center_block h1,
+.snippet_block_borderheading .borderheading_center_block h2,
+.snippet_block_borderheading .borderheading_center_block h3,
+.snippet_block_borderheading .borderheading_center_block h4,
+.snippet_block_borderheading .borderheading_center_block h5,
+.snippet_block_borderheading .borderheading_center_block h6 {
+    display: inline-block;
+    padding-top: 0.9em;
+    padding-bottom: 0.25em;
+    border-bottom: 4px solid #e8e7e4;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/*
+    ==============================
+    drop_in_subheading and options
+    ==============================
 */
 #emailBody .drop_in_subheading .flexibleContainer {
     width: 100%;
@@ -185,6 +237,8 @@
     font-weight: normal;
 }
 
+
+
 /*
     ====================
     TIPP-Link
@@ -199,6 +253,8 @@
     background-color: white;
     padding: 0 0.5em;
 }
+
+
 
 /* --------------- */
 /* SNIPPET OPTIONS */
@@ -238,11 +294,31 @@
 }
 
 
-/*
-    .khma_small_image: image size 140px
-    -----------------------------------
-*/
+
+/* ----------------------------- */
 /* snippet_block_text_image_left */
+/* ----------------------------- */
+
+/* snippet_block_text_image_left.khma_sb_fg_border_info */
+
+.snippet_block_text_image_left.khma_sb_fg_border_info .flexibleContainerRight,
+.snippet_block_text_image_left.khma_sb_fg_border_info .flexibleContainerRight .flexibleImage {
+    width: 320px;
+}
+.snippet_block_text_image_left.khma_sb_fg_border_info.dadi_sb_fg_darkgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_sb_fg_border_info.dadi_sb_fg_grey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_sb_fg_border_info.dadi_sb_fg_lightgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_sb_fg_border_info.dadi_sb_fg_orange .flexibleContainerRight {
+    width: 280px;
+}
+
+
+/*
+    snippet_block_text_image_left.khma_small_image: image size 140px
+    ----------------------------------------------------------------
+*/
+
+/* snippet_block_text_image_left.khma_small_image */
 .snippet_block_text_image_left.khma_small_image .flexibleContainerLeft,
 .snippet_block_text_image_left.khma_small_image .flexibleContainerLeft .flexibleImage {
     width: 140px;
@@ -257,7 +333,59 @@
 .snippet_block_text_image_left.khma_small_image.dadi_sb_fg_orange .flexibleContainerRight {
     width: 400px;
 }
+
+/* snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info */
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info .flexibleContainerRight,
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info .flexibleContainerRight .flexibleImage {
+    width: 380px;
+}
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info.dadi_sb_fg_darkgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info.dadi_sb_fg_grey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info.dadi_sb_fg_lightgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_small_image.khma_sb_fg_border_info.dadi_sb_fg_orange .flexibleContainerRight {
+    width: 330px;
+}
+
+
+/*
+    snippet_block_text_image_left.khma_tiny_image: image size 140px
+    ----------------------------------------------------------------
+*/
+
+/* snippet_block_text_image_left.khma_tiny_image */
+.snippet_block_text_image_left.khma_tiny_image .flexibleContainerLeft,
+.snippet_block_text_image_left.khma_tiny_image .flexibleContainerLeft .flexibleImage {
+    width: 40px;
+}
+.snippet_block_text_image_left.khma_tiny_image .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image .flexibleContainerRight .flexibleImage {
+    width: 550px;
+}
+.snippet_block_text_image_left.khma_tiny_image.dadi_sb_fg_darkgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.dadi_sb_fg_grey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.dadi_sb_fg_lightgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.dadi_sb_fg_orange .flexibleContainerRight {
+    width: 450px;
+}
+
+/* snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info */
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info .flexibleContainerRight .flexibleImage {
+    width: 480px;
+}
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info.dadi_sb_fg_darkgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info.dadi_sb_fg_grey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info.dadi_sb_fg_lightgrey .flexibleContainerRight,
+.snippet_block_text_image_left.khma_tiny_image.khma_sb_fg_border_info.dadi_sb_fg_orange .flexibleContainerRight {
+    width: 380px;
+}
+
+
+/* ------------------------------ */
 /* snippet_block_text_image_right */
+/* ------------------------------ */
+
+/* snippet_block_text_image_right.khma_small_image */
 .snippet_block_text_image_right.khma_small_image .flexibleContainerLeft,
 .snippet_block_text_image_right.khma_small_image .flexibleContainerLeft .flexibleImage {
     width: 450px;
@@ -274,6 +402,8 @@
 }
 
 
+
+/* ------------------------- */
 /* Banner Snippet image size */
 /* ------------------------- */
 .khma_sb_banner_width_normal .textContent .flexibleImage {
@@ -283,6 +413,8 @@
 }
 
 
+
+/* -------------------------------------------------- */
 /* KHMA Border Styles for snippet_block_text snippets */
 /* -------------------------------------------------- */
 /*.khma_sb_fg_border_left .contentTable {*/
@@ -304,11 +436,21 @@
     padding-bottom: 6px;
 }
 .khma_sb_fg_border_info table.contentTable > tbody > tr > td.textContent {
-    border-left: 3px solid #e8e7e4;
-    padding: 30px;
+    border: 4px solid #e8e7e4;
+    padding: 20px 30px;
 }
 
 
 
-
+/* -------------------------- */
+/* khma_snippet_block_padding */
+/* -------------------------- */
+.snippet_block.khma_snippet_block_padding_none .flexibleContainerCell {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.snippet_block.khma_snippet_block_padding_lower .flexibleContainerCell {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
 

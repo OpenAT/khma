@@ -40,6 +40,7 @@ Custom Newsletter-Theme for Khma based on the website design.
     'auto_install': False,
     'depends': [
         'fso_website_email',
+        'website_snippet_anchor',
     ],
     'data': [
         'email_theme_khma_snippets.xml',

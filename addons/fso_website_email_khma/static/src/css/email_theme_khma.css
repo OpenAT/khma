@@ -210,8 +210,18 @@ blockquote {
 }
 
 .khma_date_in_header {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /*font-family: inherit;*/
     font-size: 16px;
-    line-height: 22px;
-    color: #5a5a5a;
+    /*line-height: 22px;*/
+    /*color: inherit;*/
+    text-transform: uppercase;
+}
+
+.khma_headline4b {
+    /*font-family: inherit;*/
+    font-size: 16px;
+    /*line-height: 22px;*/
+    /*color: inherit;*/
+    text-transform: uppercase;
+    display: block;
 }
