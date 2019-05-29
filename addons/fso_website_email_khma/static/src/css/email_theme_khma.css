@@ -1,0 +1,227 @@
+/* ---- */
+/* MAIN */
+/* ---- */
+html, body, #bodyTable, #bodyCell {
+    background-color: #ffffff;
+}
+html body #wrapwrap {
+    margin-top: 0;
+}
+.headerCell {
+    font-size: 12px;
+}
+
+/* ------------------------------- */
+/* KHMA SIZING FOR 650 PIXEL WIDTH */
+/* ------------------------------- */
+#khma_header_body, #emailBody, #khma_footer_body {
+    margin: 0 auto;
+    width: 100%;
+}
+#khma_header_body .flexibleContainer,
+#emailBody .flexibleContainer,
+#khma_footer_body .flexibleContainer {
+    width: 650px;
+}
+
+/*
+    ===========
+    khma header
+    ===========
+*/
+#open_in_browser {
+    padding: 5px 20px;
+    text-align: left;
+}
+#open_in_browser a,
+#open_in_browser p {
+    font-size: 11px;
+    color: #7f7f7f;
+}
+
+#khma_header {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    /* fix for older outlooks (cant use height) */
+    min-height: 87px;
+    max-height: 87px;
+}
+#khma_header .contentTable {
+    background-color: #ffffff;
+    color: #eeeeee;
+    font-size: 11px;
+    line-height:13px;
+}
+#khma_header .contentTable a {
+    color: #bbbbbb;
+}
+#khma_header table.flexibleContainerLeft .imageContent {
+    padding: 6px 20px 0 20px;
+}
+#khma_header table.flexibleContainerLeft .imageContent img {
+    width: 80px;
+}
+/*#khma_header table.flexibleContainerLeft .imageContent,*/
+#khma_header table.flexibleContainerRight .textContent {
+    padding: 15px 20px;
+}
+
+
+/*
+    ====
+    body
+    ====
+*/
+#bodyCell {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/*
+    ===========
+    khma footer
+    ===========
+*/
+#khma_footer {
+    background-color: #e8e7e4;
+    padding-top: 4em;
+    /* Fix for Aplle iOS clients */
+    padding-bottom: 60px;
+}
+
+#khma_footer a {
+    text-decoration: underline;
+}
+
+#khma_footer .flexibleContainerLeft,
+#khma_footer .flexibleContainerRight {
+    width: 50%;
+}
+
+#footer_left h6,
+#footer_left p {
+    text-align: left;
+}
+
+
+/* ---------- */
+/* Typography */
+/* ---------- */
+p, td, a, div, span {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
+p {
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+/* Links */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+/* Headlines */
+.h1, .h2, .h3,
+h1, h2, h3 {
+    margin-top: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 140%;
+    color: #000000;
+
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+.h1, h1 {
+    font-size: 42px;
+    padding-bottom: 12px;
+    font-weight: 300;
+}
+h1.khma_h1_40 {
+    font-size: 40px;
+}
+.h2, h2 {
+    font-size: 26px;
+    padding-bottom: 12px;
+    font-weight: 300;
+}
+.h3, h3 {
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 12px;
+}
+.h4, h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.h5, h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+.h6, h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.khma_title_image {
+    margin-bottom: 8px;
+}
+.khma_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 12px;
+}
+
+blockquote {
+    padding: 11px 22px;
+    margin: 0 0 22px;
+    font-size: 20px;
+    border-left: 5px solid #000000;
+}
+
+
+.khma_small_text {
+    font-size: 12px;
+}
+
+.khma_date_in_header {
+    /*font-family: inherit;*/
+    font-size: 16px;
+    /*line-height: 22px;*/
+    /*color: inherit;*/
+    text-transform: uppercase;
+}
+
+.khma_headline4b {
+    /*font-family: inherit;*/
+    font-size: 16px;
+    /*line-height: 22px;*/
+    /*color: inherit;*/
+    text-transform: uppercase;
+    display: block;
+}
