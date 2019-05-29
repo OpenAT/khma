@@ -44,6 +44,7 @@ Custom Newsletter-Theme for Khma based on the website design.
     ],
     'data': [
         'email_theme_khma_snippets.xml',
+        'email_theme_khma_combined_snippets.xml',
         'email_theme_khma.xml',
     ],
     'qweb': [

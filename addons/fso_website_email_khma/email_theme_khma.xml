@@ -63,7 +63,7 @@
                                                                 <table id="footer_left" align="left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerLeft">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                            <td align="center" class="textContent ckediting_disabled" valign="top">
                                                                                 <h6>KUNSTHISTORISCHES MUSEUM WIEN</h6>
                                                                                 <p style="text-align: left;">
                                                                                     Maria Theresien-Platz, 1010 Wien<br/>
@@ -80,7 +80,7 @@
                                                                 <table id="footer_right" align="right" border="0" cellpadding="0" cellspacing="0" class="flexibleContainerRight">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                            <td align="center" class="textContent ckediting_disabled" valign="top">
                                                                                 <p id="footer_actions" style="text-align: right;">
                                                                                     <a href="mailto:info@khmaenhilfe.org" target="_blank">Meine Daten ändern</a><br/>
                                                                                     <a href="http://www.khmaenhilfe.org/" target="_blank">Newsletter abbestellen</a>
@@ -154,7 +154,7 @@
                     <!-- ============ -->
                     <!-- THEME 'khma' -->
                     <!-- ============ -->
-                    <center>
+                    <center class="ckediting_disabled">
                         <table id="bodyTable" class="ckediting_disabled" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
 
                             <!-- OPEN IN BROWSER -->

@@ -454,3 +454,26 @@
     padding-bottom: 10px;
 }
 
+
+/* -----------------  */
+/* KHMA Border colors */
+/* ------------------ */
+#emailBody .snippet_block.khma_bc_red table.contentTable > tbody > tr > td.textContent,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h1,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h2,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h3,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h4,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h5,
+.snippet_block_borderheading.khma_bc_red .borderheading_center_block h6 {
+    border-color: #833522;
+}
+
+#emailBody .snippet_block.khma_bc_yellow table.contentTable > tbody > tr > td.textContent,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h1,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h2,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h3,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h4,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h5,
+.snippet_block_borderheading.khma_bc_yellow .borderheading_center_block h6 {
+    border-color: #ffff52;
+}
